@@ -41,6 +41,41 @@ header {
   font-size: 16px;
 }
 
+main {
+  padding: 30px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.current-details {
+  font-size: 16px;
+  line-height: 24px;
+  color: #c4c1e0;
+}
+
+.current-details strong {
+  color: #f83e4b;
+}
+
+.current-temperature {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.current-temperature-unit {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
 footer {
   border-top: 1px solid #f83e4b;
   padding-top: 30px;
