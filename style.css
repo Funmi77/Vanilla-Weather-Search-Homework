@@ -30,3 +30,13 @@ header {
   width: 75%;
   border-radius: 6px;
 }
+
+.search-button {
+  background-color: #d9f2ff;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  color: #f83e4b;
+  margin-left: 6px;
+  font-size: 16px;
+}
