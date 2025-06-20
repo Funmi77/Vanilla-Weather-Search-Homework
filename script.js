@@ -6,7 +6,8 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = temperature;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.condition.description;
-  console.log(response.data.condition.description);
+
+  console.log(response.data);
 }
 
 function search(event) {
