@@ -12,7 +12,7 @@ function displayTemperature(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   let timeElement = document.querySelector("#time");
   let date = response.data.time * 1000;
-  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+  timeElement.innerHTML = ` ${date.getDay()}${date.getHours()}:${date.getMinutes()}`;
   console.log(response.data);
 }
 
