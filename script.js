@@ -5,7 +5,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 
-  console.log(response.data.condition);
+  console.log(response.data.condition.description);
 }
 
 function search(event) {
