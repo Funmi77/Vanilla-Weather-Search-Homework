@@ -7,10 +7,7 @@ function displayTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  let icon = `<img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                class="current-temperature-icon"
-              />`;
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
@@ -18,6 +15,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
+  icon.innerHTML = ` <img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
 }
 
 function searchCity(city) {
