@@ -53,10 +53,8 @@ function handleSearchSubmit(event) {
 }
 
 function displayForecast() {
-  let forecast = document.querySelector("#forecast");
-
   let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
-  let forecastElement = "";
+  let forecastHtml = "";
 
   days.forEach(function (day) {
     forecastHtml =
@@ -75,6 +73,7 @@ function displayForecast() {
 `;
   });
 
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
